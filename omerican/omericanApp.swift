@@ -19,7 +19,7 @@ struct omericanApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ListView()
+            ContentView()
                 .environmentObject(dataManager)
         }
     }

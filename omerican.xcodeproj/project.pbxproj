@@ -20,6 +20,10 @@
 		C922A85829802D8500A44A29 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922A85729802D8500A44A29 /* Dog.swift */; };
 		C922A85A29802FAA00A44A29 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922A85929802FAA00A44A29 /* DataManager.swift */; };
 		C922A85C2980529400A44A29 /* NewDogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922A85B2980529400A44A29 /* NewDogView.swift */; };
+		C9CCBD712982FB67006CB5F4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CCBD702982FB67006CB5F4 /* ProfileView.swift */; };
+		C9CCBD732983286D006CB5F4 /* LoginRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CCBD722983286D006CB5F4 /* LoginRegister.swift */; };
+		C9CCBD752983B844006CB5F4 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CCBD742983B844006CB5F4 /* Player.swift */; };
+		C9CCBD772983B979006CB5F4 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CCBD762983B979006CB5F4 /* Goal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,10 @@
 		C922A85729802D8500A44A29 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		C922A85929802FAA00A44A29 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		C922A85B2980529400A44A29 /* NewDogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDogView.swift; sourceTree = "<group>"; };
+		C9CCBD702982FB67006CB5F4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C9CCBD722983286D006CB5F4 /* LoginRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegister.swift; sourceTree = "<group>"; };
+		C9CCBD742983B844006CB5F4 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		C9CCBD762983B979006CB5F4 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +79,11 @@
 			children = (
 				C922A83B29800B7C00A44A29 /* omericanApp.swift */,
 				C922A83D29800B7C00A44A29 /* ContentView.swift */,
+				C9CCBD702982FB67006CB5F4 /* ProfileView.swift */,
+				C9CCBD722983286D006CB5F4 /* LoginRegister.swift */,
 				C922A85729802D8500A44A29 /* Dog.swift */,
+				C9CCBD742983B844006CB5F4 /* Player.swift */,
+				C9CCBD762983B979006CB5F4 /* Goal.swift */,
 				C922A85929802FAA00A44A29 /* DataManager.swift */,
 				C922A85529802C0500A44A29 /* ListView.swift */,
 				C922A85B2980529400A44A29 /* NewDogView.swift */,
@@ -170,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9CCBD752983B844006CB5F4 /* Player.swift in Sources */,
 				C922A84529800B7D00A44A29 /* Persistence.swift in Sources */,
+				C9CCBD712982FB67006CB5F4 /* ProfileView.swift in Sources */,
 				C922A83E29800B7C00A44A29 /* ContentView.swift in Sources */,
+				C9CCBD772983B979006CB5F4 /* Goal.swift in Sources */,
 				C922A85C2980529400A44A29 /* NewDogView.swift in Sources */,
+				C9CCBD732983286D006CB5F4 /* LoginRegister.swift in Sources */,
 				C922A85829802D8500A44A29 /* Dog.swift in Sources */,
 				C922A85A29802FAA00A44A29 /* DataManager.swift in Sources */,
 				C922A85629802C0500A44A29 /* ListView.swift in Sources */,

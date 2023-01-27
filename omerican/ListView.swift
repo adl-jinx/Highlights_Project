@@ -11,6 +11,12 @@ struct ListView: View {
     
     @EnvironmentObject var dataManager: DataManager
     @State private var showPopup = false
+    @Binding var isUserCurrentlyLoggedOut : Bool
+    
+    @State var shouldShowLogOutOptions = false
+    
+    
+    
     
     var body: some View {
         NavigationView {
@@ -48,8 +54,11 @@ struct ListView: View {
 }
 
 struct ListView_Previews: PreviewProvider {
+    
+    @State static var isUserCurrentlyLoggedOut = false
+    
     static var previews: some View {
-        ListView()
+        ListView( isUserCurrentlyLoggedOut: $isUserCurrentlyLoggedOut)
             .environmentObject(DataManager())
     }
 }
