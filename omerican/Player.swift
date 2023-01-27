@@ -18,7 +18,7 @@ struct Player: Hashable, Identifiable{
     var team: String
     var role: String //?
     
-    var setOfGoals: [Goal]
+//    var setOfGoals: [Goal]
 }
 
 

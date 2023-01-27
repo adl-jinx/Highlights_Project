@@ -40,7 +40,7 @@ struct ListView: View {
                 */
                 
             }
-            .navigationTitle("Dogs")
+            .navigationTitle("Player")
             .navigationBarItems(trailing: Button(action: {
                 showPopup.toggle()
             }, label: {

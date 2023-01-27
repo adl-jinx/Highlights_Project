@@ -12,7 +12,7 @@ import Firebase
 class DataManager: ObservableObject{
     
     @Published var dogs: [Dog] = []
-    
+    @Published var players: [Player] = []
     
     init(){
         fetchDog()
@@ -45,6 +45,42 @@ class DataManager: ObservableObject{
         }
     }
     
+    
+    
+    func fetchPlayer(){
+        players.removeAll()
+        
+        let db = Firestore.firestore()
+        let ref = db.collection("Players")
+        
+        ref.getDocuments{ snapshot, error in
+            guard error == nil else {
+                print(error!.localizedDescription)
+                return
+            }
+            
+            if let snapshot = snapshot {
+                for document in snapshot.documents {
+                    let data = document.data()
+                    
+                    let id = data["id"] as? String ?? ""
+                    let playerFName = data["playerFName"] as? String ?? ""
+                    let playerLName = data["playerLName"] as? String ?? ""
+                    let team = data["team"] as? String ?? ""
+                    let role = data["role"] as? String ?? ""
+//                    let setOfGoal = data["setOfGoals"] as? Goal ?? 
+                    
+                    
+                    let player = Player(id: id, playerFName: playerFName, playerLName: playerLName, team: team, role: role)
+                    
+                    self.players.append(player)
+                }
+                
+            }
+            
+        }
+    }
+    
     //
     
     func addDog(dogBreed: String){
@@ -58,5 +94,21 @@ class DataManager: ObservableObject{
         }
 
     }
+    
+    
+    
+    
+    func addPlayer(dogBreed: String){
+        let db = Firestore.firestore()
+        let ref = db.collection("Players").document(dogBreed)
+        let randomId = UUID().uuidString
+        ref.setData(["breed": dogBreed, "id": randomId]) { error in
+            if let error = error {
+                print(error.localizedDescription)
+            }
+        }
+
+    }
+
 }
 
