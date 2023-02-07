@@ -56,18 +56,7 @@ struct ProfileView: View {
 
 }
     
-    
-//    func logOut(){
-//        let firebaseAuth = Auth.auth()
-//
-//        do {
-//          try firebaseAuth.signOut()
-//
-//        } catch let signOutError as NSError {
-//          // handle the error here
-//          print ("Error signing out: %@", signOutError)
-//        }
-//    }
+
 }
 
 struct ProfileView_Previews: PreviewProvider {

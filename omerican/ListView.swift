@@ -9,45 +9,39 @@ import SwiftUI
 
 struct ListView: View {
     
-    @EnvironmentObject var dataManager: DataManager
-    @State private var showPopup = false
+//    @EnvironmentObject var dataManager: DataManager
+    
     @Binding var isUserCurrentlyLoggedOut : Bool
     
     @State var shouldShowLogOutOptions = false
     
-    
-    
+    @State var search = "search your player"
+    @ObservedObject var playersLookup = PlayersLookupViewModel()
+    @ObservedObject var data = getData()
     
     var body: some View {
+        
         NavigationView {
             List {
-                ForEach(dataManager.dogs, id: \.id) { dog in
-                    NavigationLink() {
-                        Text(dog.breed)
-                        Button("See the goal!!") {
-                            if let url = URL(string: dog.breed) {
-                                UIApplication.shared.open(url)
-                            }
-                        }.buttonStyle(.bordered)
-                        Text(dog.breed)
-                    } label : {
-                        Text(dog.player)
+                ForEach(data.datas) { player in
+
+                    NavigationLink( destination: Goals(data: player )){
+                        
+                        Text(player.playerFName)
+                        
+                        
                     }
+                    
+                    
                 }
-            /*
-            List(dataManager.dogs, id: \.id) { dog in
-                Text(dog.breed)
-                */
+
                 
             }
-            .navigationTitle("Player")
-            .navigationBarItems(trailing: Button(action: {
-                showPopup.toggle()
-            }, label: {
-                Image(systemName: "plus")
-            }))
-            .sheet(isPresented: $showPopup){
-                NewDogView()
+            .navigationTitle("Players")
+            .refreshable {
+                //
+//                data.fetchPlayers()
+                
             }
         }
     }
@@ -59,6 +53,9 @@ struct ListView_Previews: PreviewProvider {
     
     static var previews: some View {
         ListView( isUserCurrentlyLoggedOut: $isUserCurrentlyLoggedOut)
-            .environmentObject(DataManager())
+            
     }
 }
+
+
+

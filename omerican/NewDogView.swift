@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NewDogView: View {
     
-    @EnvironmentObject var dataManager: DataManager
+//    @EnvironmentObject var dataManager: DataManager
     @State private var newDog = ""
     
     var body: some View {

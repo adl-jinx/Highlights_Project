@@ -11,7 +11,7 @@ import Firebase
 @main
 struct omericanApp: App {
     
-@StateObject var dataManager = DataManager()
+//@StateObject var dataManager = DataManager()
     init(){
         
         FirebaseApp.configure()
@@ -20,7 +20,7 @@ struct omericanApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(dataManager)
+             
         }
     }
 }
