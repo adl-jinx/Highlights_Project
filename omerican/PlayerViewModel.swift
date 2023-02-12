@@ -12,7 +12,7 @@ import FirebaseFirestoreSwift
 
 class PlayerViewModel: ObservableObject {
     @Published var player: Player?
-    @Published var queryResultPlayers: [User] = []
+    @Published var queryResultPlayers: [Player] = []
     
     private let auth = Auth.auth()
     private let db = Firestore.firestore()

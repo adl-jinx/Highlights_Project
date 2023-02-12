@@ -19,6 +19,7 @@
 		C95D28F1298DA37C00FB14A3 /* PlayersLookupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95D28F0298DA37C00FB14A3 /* PlayersLookupViewModel.swift */; };
 		C95D28F3298DA43D00FB14A3 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95D28F2298DA43D00FB14A3 /* PlayerViewModel.swift */; };
 		C95D28F5298DB7A800FB14A3 /* PlayersSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95D28F4298DB7A800FB14A3 /* PlayersSearchView.swift */; };
+		C9AEEB1429937F290004CA7C /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AEEB1329937F290004CA7C /* Favorites.swift */; };
 		C9CCBD712982FB67006CB5F4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CCBD702982FB67006CB5F4 /* ProfileView.swift */; };
 		C9CCBD732983286D006CB5F4 /* LoginRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CCBD722983286D006CB5F4 /* LoginRegister.swift */; };
 		C9CCBD752983B844006CB5F4 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CCBD742983B844006CB5F4 /* Player.swift */; };
@@ -51,6 +52,7 @@
 		C95D28F0298DA37C00FB14A3 /* PlayersLookupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersLookupViewModel.swift; sourceTree = "<group>"; };
 		C95D28F2298DA43D00FB14A3 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
 		C95D28F4298DB7A800FB14A3 /* PlayersSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersSearchView.swift; sourceTree = "<group>"; };
+		C9AEEB1329937F290004CA7C /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 		C9CCBD702982FB67006CB5F4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		C9CCBD722983286D006CB5F4 /* LoginRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegister.swift; sourceTree = "<group>"; };
 		C9CCBD742983B844006CB5F4 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				C95D28F2298DA43D00FB14A3 /* PlayerViewModel.swift */,
 				C95D28F4298DB7A800FB14A3 /* PlayersSearchView.swift */,
 				C922A85929802FAA00A44A29 /* DataManager.swift */,
+				C9AEEB1329937F290004CA7C /* Favorites.swift */,
 				C922A85529802C0500A44A29 /* ListView.swift */,
 				C9E8BEBD298ADE6600763667 /* Goals.swift */,
 				C9E8BEBF298AE12A00763667 /* GoalsDetail.swift */,
@@ -218,6 +221,7 @@
 				C9CCBD752983B844006CB5F4 /* Player.swift in Sources */,
 				C9E8BEC0298AE12A00763667 /* GoalsDetail.swift in Sources */,
 				C922A84529800B7D00A44A29 /* Persistence.swift in Sources */,
+				C9AEEB1429937F290004CA7C /* Favorites.swift in Sources */,
 				C9CCBD712982FB67006CB5F4 /* ProfileView.swift in Sources */,
 				C95D28F3298DA43D00FB14A3 /* PlayerViewModel.swift in Sources */,
 				C922A83E29800B7C00A44A29 /* ContentView.swift in Sources */,

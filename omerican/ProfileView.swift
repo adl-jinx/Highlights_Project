@@ -17,42 +17,83 @@ struct ProfileView: View {
     
     var body: some View {
         
-        ZStack {
+        VStack{
             
-            VStack(spacing: 50){
             
-//            Spacer()
-            Circle()
+            
+   
+            HStack{
+                Circle()
                     .frame(width: 150, height: 150)
-            
-            
-            
-//            Spacer()
-            
-            Button {
-                //logout
-                shouldShowLogOutOptions.toggle()
-            } label: {
-                Text("Log out")
-                    .bold()
-                    .frame(width: 200, height: 40)
-                    .background(            RoundedRectangle(cornerRadius: 10, style: .continuous)
-                        .fill(.linearGradient(colors: [.pink, .orange], startPoint: .topLeading, endPoint: .bottomTrailing)))
-                    .foregroundColor(.white)
+                
+                VStack{
+                    
+                    HStack{
+                        Text("Nome")
+                            .font(.system(size: 25).bold())
+                        Text("Cognome")
+                            .font(.system(size: 25).bold())
+                    }
+                    
+                    
+                    HStack{
+                        Text("Nome")
+                            .font(.system(size: 20).bold())
+                        Text("Cognome")
+                            .font(.system(size: 20).bold())
+                    }
             }
-            .padding()
-            .actionSheet(isPresented: $shouldShowLogOutOptions) {
-                .init(title: Text("Settings"), message: Text("What do you want to do?"), buttons: [
-                    .destructive(Text("Sign Out"), action: {
-                        print("handle sign out")
-                        try? Auth.auth().signOut()
-                        self.isUserCurrentlyLoggedOut = false
-                    }),
-                    .cancel()
-                ])
+                    
             }
+            
+            
+            
+        Form{
+            
+
+            Section(header: Text("PROFILE")){
+                
+                Text("nome")
+                Text("cognome")
+                Text("email")
+                
+            }
+            
+            
+            Section(header: Text("ABOUT")){
+                
+                Text("versione")
+                
+                
+            }
+            //            Spacer()
         }
-        }//Z
+                Button {
+                    //logout
+                    shouldShowLogOutOptions.toggle()
+                } label: {
+                    Text("Log out")
+                        .bold()
+                        .frame(width: 200, height: 40)
+                        .background(            RoundedRectangle(cornerRadius: 10, style: .continuous)
+                            .fill(.linearGradient(colors: [.black, .black], startPoint: .topLeading, endPoint: .bottomTrailing)))
+                        .foregroundColor(.white)
+                }
+                .padding()
+                .actionSheet(isPresented: $shouldShowLogOutOptions) {
+                    .init(title: Text("Settings"), message: Text("What do you want to do?"), buttons: [
+                        .destructive(Text("Sign Out"), action: {
+                            print("handle sign out")
+                            try? Auth.auth().signOut()
+                            self.isUserCurrentlyLoggedOut = false
+                        }),
+                        .cancel()
+                    ])
+                }
+            }.navigationTitle("Settings")
+        
+        
+        //Z
 
 }
     

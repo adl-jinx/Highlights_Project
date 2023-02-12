@@ -26,6 +26,8 @@ class PlayersLookupViewModel: ObservableObject {
                 self.queryResultPlayers = documents.compactMap { queryDocumentSnapshot in
                     try? queryDocumentSnapshot.data(as: Player.self)
                 }
+                
+                
             }
         }
     

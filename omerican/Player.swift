@@ -13,8 +13,9 @@ import FirebaseFirestoreSwift
 
 struct Player: Codable, Identifiable{
     
-    @DocumentID var id: String? = UUID().uuidString
+//    @DocumentID var id: String? = UUID().uuidString
     
+    var id: String
     var playerFName: String
     var playerLName: String
     var team: String
@@ -26,11 +27,14 @@ struct Player: Codable, Identifiable{
         [self.playerFName.generateStringSequence(), self.playerLName.generateStringSequence(), self.playerFName.generateStringSequence(), "\(self.playerLName) \(self.playerFName)".generateStringSequence()].flatMap { $0 }
     }
     
+    
+    
+//    var isFaved: Bool
 }
 struct Goal: Codable, Identifiable {
     
-    @DocumentID var id: String? = UUID().uuidString
-    
+//    @DocumentID var id: String? = UUID().uuidString
+    var id: String
 //    var assist: Player
     var type: String
     var url: String

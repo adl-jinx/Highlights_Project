@@ -29,6 +29,11 @@ struct ContentView: View {
                         Text("A")
                     }
                 
+                ListView(isUserCurrentlyLoggedOut: $isUserCurrentlyLoggedOut)
+                    .tabItem(){
+                        Image(systemName: "star.fill")
+                        Text("Faved")
+                    }
                 
                 PlayersSearchView(isUserCurrentlyLoggedOut: $isUserCurrentlyLoggedOut)
                     .tabItem(){

@@ -12,6 +12,7 @@ struct PlayersSearchView: View {
     @EnvironmentObject var player: PlayerViewModel
     @ObservedObject var playersLookup = PlayersLookupViewModel()
     @ObservedObject var data = getData()
+//    @ObservedObject var data = getData(searchTerm: search)
     @State var keyword = ""
     
     var body: some View {
@@ -41,7 +42,7 @@ struct PlayersSearchView: View {
             SearchBarView(keyword: keywordBinding)
             ScrollView {
                 ForEach(playersLookup.queryResultPlayers, id: \.id) { player in
-                    PlayersSearchView(isUserCurrentlyLoggedOut: $isUserCurrentlyLoggedOut)
+                    ProfileBarView(player: player)
                 }
             }
         }
