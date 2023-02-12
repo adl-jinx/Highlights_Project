@@ -16,6 +16,7 @@
 		C922A854298022A700A44A29 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C922A853298022A600A44A29 /* GoogleService-Info.plist */; };
 		C922A85629802C0500A44A29 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922A85529802C0500A44A29 /* ListView.swift */; };
 		C922A85A29802FAA00A44A29 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C922A85929802FAA00A44A29 /* DataManager.swift */; };
+		C94944DC299908C00015628F /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94944DB299908C00015628F /* FavoritesView.swift */; };
 		C95D28F1298DA37C00FB14A3 /* PlayersLookupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95D28F0298DA37C00FB14A3 /* PlayersLookupViewModel.swift */; };
 		C95D28F3298DA43D00FB14A3 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95D28F2298DA43D00FB14A3 /* PlayerViewModel.swift */; };
 		C95D28F5298DB7A800FB14A3 /* PlayersSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95D28F4298DB7A800FB14A3 /* PlayersSearchView.swift */; };
@@ -49,6 +50,7 @@
 		C922A853298022A600A44A29 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C922A85529802C0500A44A29 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		C922A85929802FAA00A44A29 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		C94944DB299908C00015628F /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		C95D28F0298DA37C00FB14A3 /* PlayersLookupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersLookupViewModel.swift; sourceTree = "<group>"; };
 		C95D28F2298DA43D00FB14A3 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
 		C95D28F4298DB7A800FB14A3 /* PlayersSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersSearchView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				C95D28F4298DB7A800FB14A3 /* PlayersSearchView.swift */,
 				C922A85929802FAA00A44A29 /* DataManager.swift */,
 				C9AEEB1329937F290004CA7C /* Favorites.swift */,
+				C94944DB299908C00015628F /* FavoritesView.swift */,
 				C922A85529802C0500A44A29 /* ListView.swift */,
 				C9E8BEBD298ADE6600763667 /* Goals.swift */,
 				C9E8BEBF298AE12A00763667 /* GoalsDetail.swift */,
@@ -230,6 +233,7 @@
 				C9CCBD732983286D006CB5F4 /* LoginRegister.swift in Sources */,
 				C922A85A29802FAA00A44A29 /* DataManager.swift in Sources */,
 				C9E8BEBE298ADE6600763667 /* Goals.swift in Sources */,
+				C94944DC299908C00015628F /* FavoritesView.swift in Sources */,
 				C922A85629802C0500A44A29 /* ListView.swift in Sources */,
 				C922A83C29800B7C00A44A29 /* omericanApp.swift in Sources */,
 				C922A84829800B7D00A44A29 /* omerican.xcdatamodeld in Sources */,

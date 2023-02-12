@@ -11,7 +11,7 @@ import Firebase
 
 struct ContentView: View {
     
-
+    @StateObject var favorites = Favorites()
     @State private var isUserCurrentlyLoggedOut: Bool = true //qua
     
     var body: some View {

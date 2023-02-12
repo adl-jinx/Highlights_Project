@@ -10,6 +10,7 @@ import SwiftUI
 struct Goals: View{
 
     var data : Player
+    @EnvironmentObject var favorites: Favorites
     
     var body: some View{
         
@@ -38,6 +39,19 @@ struct Goals: View{
                 .font(.system(size: 20).bold())
                 .padding(6)
                 .foregroundColor(.blue)
+            
+            
+            
+            //funziona per finta
+            Button(favorites.contains(data) ? "Remove from Favorites" : "Add to Favorites") {
+                if favorites.contains(data) {
+                    favorites.remove(data)
+                } else {
+                    favorites.add(data)
+                }
+            }
+            .buttonStyle(.borderedProminent)
+            .padding()
 
             Spacer()
             
